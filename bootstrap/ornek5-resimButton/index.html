@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resim-Button</title>
+
+    <!-- * Bootstrap'i lokalden çalıştırmak için Boostrap indirerek dosyaları proje dosyamıza (Örneğin assets/lib klasörüne) ekleyebiliriz. Sonrasında ise aşağıdaki gibi bootstrap.min.css dosyasına link verebiliriz. -->
+
+    <!--? Ayrıca sayfanın en sonuna doğru Bootstrap JS kodlarını da kullanamk istersek <script> etiketi ile ana js kodunu eklememiz gerekir. -->
+
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ** border'lar hakkında ayrıntılı bilgi için 
+    ! https://getbootstrap.com/docs/5.0/utilities/borders/ -->
+
+    <div class="container mt-4">
+      <div class="row">
+        <div id="resim-1" class="col">
+          <img
+            class="img-fluid border border-danger border-2 rounded-3"
+            src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="img-1"
+          />
+        </div>
+
+        <div class="col">
+          <img
+            class="img-fluid border border-success border-3 rounded-pill"
+            src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="img-2"
+          />
+        </div>
+
+        <div class="col">
+          <img
+            class="img-fluid img-thumbnail"
+            src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="img-3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <button class="btn btn-outline-warning text-uppercase">tikla</button>
+      <button class="btn btn-danger text-uppercase">sil</button>
+      <button class="btn btn-success text-uppercase">gonder</button>
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-lg d-block text-uppercase w-100"
+      >
+        <a href="#resim-1" class="text-decoration-none">kaydet</a>
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="btn-group">
+        <a href="#" class="btn btn-warning">1</a>
+        <a href="#" class="btn btn-success">2</a>
+        <a href="#" class="btn btn-info">3</a>
+      </div>
+    </div>
+
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

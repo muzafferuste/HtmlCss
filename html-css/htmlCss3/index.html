@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Formlar</title>
+</head>
+
+<body>
+    <h1>FORMLAR</h1>
+    <form>
+        <label class="label" for="ad">Adınız: </label>
+        <input class="giriş" id="ad" type="text" maxlength="20" name="adı" placeholder="isim giriniz" />
+        <br />
+
+        <label class="label" for="şifre">Şifreniz</label>
+        <input class="giriş" id="şifre" type="password" name="ad" value="" required="" />
+        <br />
+
+        <label class="label" for="email">Email</label>
+        <input class="giriş" id="email" type="email" name="email" value="" />
+        <br />
+
+        <label class="label" for="sayı">Yaşınız</label>
+        <input class="giriş" id="sayı" type="number" name="yaş" value="" min="0" max="100" />
+        <br />
+
+        <label class="label" for="adres">Adres</label>
+        <textarea name="text-alanı" id="adres" rows="10"></textarea>
+        <br />
+
+        <button class="btn" type="submit">
+      <i class="far fa-save"></i> Gönder
+    </button>
+        <button class="btn" type="reset">
+      <i class="fas fa-trash-alt"></i> Temizle
+    </button>
+    </form>
+</body>
+
+</html>

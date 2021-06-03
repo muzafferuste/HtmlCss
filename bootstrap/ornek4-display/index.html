@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+
+    <!-- * Bootstrap'i lokalden çalıştırmak için Boostrap indirerek dosyaları proje dosyamıza (Örneğin assets/lib klasörüne) ekleyebiliriz. Sonrasında ise aşağıdaki gibi bootstrap.min.css dosyasına link verebiliriz. -->
+
+    <!--? Ayrıca sayfanın en sonuna doğru Bootstrap JS kodlarını da kullanamk istersek <script> etiketi ile ana js kodunu eklememiz gerekir. -->
+
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-3 text-center text-info text-uppercase">Display</h1>
+
+      <!-- ** Aynı CSS'de olduğu gibi Bootstrap ile de nesnelerin display özellikleri değiştirilebilir. Display classları hakkında ayrıntılı bilgi için 
+      ! https://getbootstrap.com/docs/5.0/utilities/display/ -->
+
+      <div class="container text-center">
+        <div class="d-none bg-danger">1</div>
+        <div class="d-none d-sm-block bg-warning">2</div>
+        <div class="d-none d-ml-block d-lg-none bg-warning">2</div>
+      </div>
+
+      <!-- ? fixed-top sayfanın üzerine fixed-bottom ise sayfanın altına nesneleri yapıştırır.
+      ? Ayrıntılı bilgi için 
+      ! https://getbootstrap.com/docs/4.0/utilities/position/ -->
+
+      <!-- ** margin ve padding hakkında ayrıntılı bilgi için
+      ! https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
+
+      <div
+        class="
+          container-fluid
+          d-flex
+          justify-content-between
+          p-3
+          bg-dark
+          text-light
+          fixed-bottom
+          mb-4
+          mt-3
+        "
+      >
+        <div>
+          <i class="fas fa-phone text-warning"></i>
+          <span class="d-none d-md-inline">+90 555 55 55</span>
+          <i class="fab fa-whatsapp text-warning ms-3"></i>
+          <span class="d-none d-md-inline">+90 555 55 55</span>
+        </div>
+
+        <div>
+          <i class="fab fa-twitter mx-2 text-info"></i>
+          <i class="fab fa-youtube mx-2 text-info"></i>
+          <i class="fab fa-instagram mx-2 text-info"></i>
+          <span class="d-none d-lg-inline">#texhproed</span>
+        </div>
+      </div>
+    </div>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
