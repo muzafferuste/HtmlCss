@@ -64,7 +64,7 @@ h4 {
   color: var(--mavi-3);
 }
 
-/* // Medya sorgusu */
+/* Medya sorgusu */
 @media screen and (min-width: 800px) {
   h2 {
     font-size: 50px;
