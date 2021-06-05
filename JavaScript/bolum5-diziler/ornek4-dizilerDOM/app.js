@@ -22,8 +22,8 @@ const diziyiListeyeEkle = function () {
 // Maaslar dizisindeki maas bilgilerini ve toplam maas bilgisini HTML'deki aciklama (h1) elemanina yazdir.
 const aciklamaGuncelle = function (dizi) {
   const aciklama = document.querySelector(".aciklama");
-  const yeniMaaslar = dizi.join(" ");
-  aciklama.innerHTML = `Maaşlar: ${yeniMaaslar} <br> 
+  const yeniDizi = dizi.join(" ");
+  aciklama.innerHTML = `Maaşlar: ${yeniDizi} <br> 
     Toplam Maaş: ${dizi.reduce((x, y) => x + y, 0)}`;
 };
 
@@ -84,7 +84,7 @@ document.querySelector(".input-liste").onkeydown = function (e) {
     document.querySelector(".ekle").onclick();
   }
   // Del tusuna basildi ise sil metodunu cagir.
-  if (e.key === "Delete") {
+  if (e.key === "Escape") {
     // alternatif olarak e.keyCode === 46 kullanilabilir.
     document.querySelector(".sil").onclick();
   }
